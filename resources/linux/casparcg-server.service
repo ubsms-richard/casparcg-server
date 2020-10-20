@@ -1,0 +1,15 @@
+[Unit]
+Description=CasparCG Server
+After=graphical.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/casparcg/
+Environment=LD_LIBRARY_PATH=/opt/casparcg/lib
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=/var/run/lxdm/lxdm-:0.auth
+ExecStart=/opt/casparcg/bin/casparcg
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
