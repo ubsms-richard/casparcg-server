@@ -7,7 +7,7 @@ clean:
 
 install-libs:
 	mkdir -p $(DESTDIR)/usr/lib/casparcg
-	cp -ar casparcg_server/lib $(DESTDIR)/usr/lib/casparcg
+	cp -ar casparcg_server/lib/* $(DESTDIR)/usr/lib/casparcg/
 
 install-common:
 	mkdir -p $(DESTDIR)/usr/share/casparcg

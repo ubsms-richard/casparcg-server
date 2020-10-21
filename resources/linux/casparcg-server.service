@@ -3,6 +3,8 @@ Description=CasparCG Server
 After=graphical.target
 
 [Service]
+User=casparcg
+Group=casparcg
 Type=simple
 WorkingDirectory=/opt/casparcg/
 Environment=LD_LIBRARY_PATH=/opt/casparcg/lib
